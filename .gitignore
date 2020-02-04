@@ -1,0 +1,14 @@
+# IDE
+__pycache__ 
+.vscode
+
+# mysql
+local_setting.py
+
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build

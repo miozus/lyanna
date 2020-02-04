@@ -8,3 +8,5 @@ class ReactItem(BaseModel):
 
     class Meta:
         table = 'react_items'
+
+        

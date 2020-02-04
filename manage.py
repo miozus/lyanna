@@ -5,7 +5,7 @@ from ext import init as _init
 
 async def init():
     await _init(create_db=False)
-    await Tortoise.drop_databases()
+    await Tortoise._drop_databases()
     await _init(create_db=True)
     await Tortoise.generate_schemas()
 
