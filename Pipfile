@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+sanic = "==0.8.3"
+click = "*"
+tortoise-orm = "*"
+aiomysql = "*"
+mysql = "*"
+
+[requires]
+python_version = "3.7"
