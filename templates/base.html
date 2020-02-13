@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>${ self.title() }</title>
+        <!-- E2 拼写完善: title -> ${ self.title() } 标签页-->
+        ${ self.doc_head() }
+    </head>
+    <body>
+
+        <div class="uk-container">
+            <div class="uk-card uk-card-body uk-card-primary">
+                <h3 class="uk-card-title">Example headline</h3>
+
+                <button class="uk-button uk-button-default" uk-tooltip="title: Hello World">Hover</button>
+                <!-- E3: 弹窗失败 -->
+            </div>
+        </div>
+
+        ${ self.bottom_script() }
+    </body>
+</html>
+
+<%def name="title()">豆瓣</%def>
+<%def name="more_header()"></%def>
+
+<%def name="doc_head()">
+<link rel="stylesheet" href="${ request.app.url_for('static', filename='css/uikit.min.css') }">
+${ self.more_header() | n}
+<!-- E1 语法错误: < -> { -->
+</%def>
+
+<%def name="bottom_script()">
+</%def>

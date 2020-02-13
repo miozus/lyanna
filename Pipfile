@@ -12,7 +12,6 @@ click = "*"
 tortoise-orm = "*"
 aiomysql = "*"
 ipython = "*"
-sanic-mako = "*"
 
 [requires]
 python_version = "3.7"

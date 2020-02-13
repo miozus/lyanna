@@ -1,7 +1,8 @@
 import click
 from tortoise import Tortoise, run_async
 
-from ext import init as init_Db
+from ext import init_db
+
 
 async def init():
     # 本地先创建mysql blog ，才连接成功

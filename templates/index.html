@@ -1,1 +1,7 @@
-Title: ${ post.title }!
+<%inherit file="/base.html" />
+
+<%def name="bottom_script()">
+    <script src="${ request.app.url_for('static', filename='dist/base.js')}"></script>
+</%def>    
+
+<!-- E1 拼写错误: bottom_script()" -> "bottom_script()"-->
