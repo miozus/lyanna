@@ -7,7 +7,7 @@ verify_ssl = true
 pylint = "*"
 
 [packages]
-sanic = "==0.8.3"
+sanic = "==20.12.6"
 click = "*"
 tortoise-orm = "*"
 aiomysql = "*"
